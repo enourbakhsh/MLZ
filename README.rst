@@ -17,7 +17,7 @@ Installation
 =============
 You can get this forked version of *MLZ* from github::
 
-	pip install git+https://github.com/enourbakhsh/MLZ.git
+	pip install git+https://github.com/enourbakhsh/MLZ
 
 If you want to run the code using the command line, make sure to cd to where the `runMLZ` script exists and make it executable with::
 
