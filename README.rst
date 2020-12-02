@@ -1,7 +1,7 @@
 MLZ: Machine Learning for photo-Z
 ====================================
 
-**Important Note**: this is a customized version of the original *MLZ* which works with python 3 and the new version of numpy (>1.1.6 which needs `allow_pickles`).
+**Important Note**: this is a customized version of the original *MLZ* which works with python 3 and the new version of numpy (>1.1.6 which needs *allow_pickles*).
 
 MLZ is a python code that computes photometric
 redshift PDFs using machine learning techniques,
@@ -19,7 +19,7 @@ You can get this forked version of *MLZ* from github::
 
 	pip install git+https://github.com/enourbakhsh/MLZ
 
-If you want to run the code using the command line, make sure to cd to where the `runMLZ` script exists and make it executable with::
+If you want to run the code using the command line, make sure to cd to where the *runMLZ* script exists and make it executable with::
 
 	chmod +x runMLZ
 
