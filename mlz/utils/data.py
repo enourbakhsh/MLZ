@@ -31,7 +31,7 @@ def read_catalog(filename, myrank=0, check='no', get_ng='no', L_1=0, L_2=-1, A_T
     :rtype: float array
     """
     if filename[-3:] == 'npy':
-        filein = np.load(filename)
+        filein = np.load(filename) #, load_pickle=True)
         if check == 'yes': filein = filein[0:200]
         if get_ng == 'yes': return len(filein)
         if L_2 != -1: filein = filein[L_1:L_2]
@@ -272,7 +272,7 @@ class catalog():
         """
         Loads the random catalog with the realizations
         """
-        Junk = np.load(self.Pars.path_train + self.Pars.randomcatname + '.npy')
+        Junk = np.load(self.Pars.path_train + self.Pars.randomcatname + '.npy', load_pickle=True)
         self.BigRan = Junk.item()
         del Junk
 
