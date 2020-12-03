@@ -14,7 +14,7 @@ setup(
     ext_modules=[Extension('somF', files_f90, include_dirs=['mlz/ml_codes'], ), ],
     packages=['mlz', 'mlz.plot', 'mlz.utils', 'mlz.test', 'mlz.ml_codes'],
     py_modules=['mlz','mlz.plot','mlz.utils','mlz.test','mlz.ml_codes'],
-    package_data={'mlz': ['test/SDSS_MGS.train', 'test/SDSS_MGS.test', 'test/SDSS_MGS.inputs', 'plot/*.txt', 'runMLZ']},
+    package_data={'mlz': ['test/SDSS_MGS.train', 'test/SDSS_MGS.test', 'test/SDSS_MGS.inputs', 'plot/*.txt', 'runMLZ', 'plot/*']},
     scripts=['mlz/runMLZ', 'mlz/plot/plot_map', 'mlz/plot/plot_results', 'mlz/plot/plot_importance',
              'mlz/plot/plot_tree', 'mlz/utils/use_pdfs', 'mlz/plot/plot_pdf_use', 'mlz/plot/plot_sparse'],
     license='LICENSE.txt',
