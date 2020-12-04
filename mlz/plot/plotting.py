@@ -172,6 +172,9 @@ class Qplot():
         ax2.set_xlabel('redshift', fontsize=16)
         ax2.set_ylabel('Importance', fontsize=16)
         plt.legend(loc=0)
+        importance_path = froot + '.importance.' + filenum + '.png'
+        plt.savefig(importance_path, bbox_inches='tight')
+        print('Saved the importance plot to ' + importance_path)
         plt.show()
 
     def plot_results(self, result_1=0, zconf_1=0., result_2=0, zconf_2=0.):
